@@ -1,0 +1,12 @@
+formulario pa
+<form method='POST'>
+    {% csrf_token %}
+<br>
+titulo: {{formulario.titulo}}
+<br>
+autor: {{formulario.autor}}
+<br>
+contenido: {{formulario.contenido}}
+<br>
+<button type='submit'> enviar </button>
+</form>

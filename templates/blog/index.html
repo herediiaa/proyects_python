@@ -1,0 +1,8 @@
+pagina de blog para enlistar todos los blogs
+<br>
+{% for blog in blogPosts %}
+<p>Ir a blog <a href={% url 'blog:detail' blog.id  %}>{{blog.titulo}}</a> </p>
+
+{% endfor %}
+<br>
+en el caso de que quieras crear un blog <a href={% url 'blog:create' %}>aca</a>
